@@ -14,11 +14,8 @@ pipeline {
             steps {
                 echo '=== Testing Petclinic Application ==='
                 sh 'mvn test'
-            }
-            
-                   stage ('OWASP Dependency-Check Vulnerabilities') {
-                         steps {
-                         dependencyCheck additionalArguments: ''' 
+              
+                                           dependencyCheck additionalArguments: ''' 
                                           -o "./" 
                                           -s "./"
                                           -f "ALL" 
@@ -26,7 +23,7 @@ pipeline {
 
                                            dependencyCheckPublisher pattern: 'dependency-check-report.xml'
             
-        }     
+        
     }
 
             post {
