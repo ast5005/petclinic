@@ -15,14 +15,11 @@ pipeline {
                 echo '=== Testing Petclinic Application ==='
                 sh 'mvn test'
               
-                                           dependencyCheck additionalArguments: ''' 
-                                          -o "./" 
-                                          -s "./"
-                                          -f "ALL" 
-                                          --prettyPrint''', odcInstallation: 'OWASP-DC'
-
-                                           dependencyCheckPublisher pattern: 'dependency-check-report.xml'
-            
+        
+            // Run OWASP Dependency Check
+            dependencyCheck additionalArguments: '-f HTML, XML,CSV -s .'
+        
+                              
         
     }
 
