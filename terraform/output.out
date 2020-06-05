@@ -1,0 +1,89 @@
+[0m[1maws_eip.elastic-ip-for-nat-gw: Creating...[0m[0m
+[0m[1maws_key_pair.ec2key: Creating...[0m[0m
+[0m[1maws_vpc.development-vpc: Creating...[0m[0m
+[0m[1maws_key_pair.ec2key: Creation complete after 1s [id=publicKey][0m[0m
+[0m[1maws_eip.elastic-ip-for-nat-gw: Creation complete after 1s [id=eipalloc-0cc7c876eac594d2b][0m[0m
+[0m[1maws_vpc.development-vpc: Creation complete after 4s [id=vpc-010e76f291142d407][0m[0m
+[0m[1maws_route_table.public-route-table: Creating...[0m[0m
+[0m[1maws_subnet.public-subnet-3: Creating...[0m[0m
+[0m[1maws_subnet.private-subnet-1: Creating...[0m[0m
+[0m[1maws_subnet.public-subnet-1: Creating...[0m[0m
+[0m[1maws_subnet.public-subnet-2: Creating...[0m[0m
+[0m[1maws_subnet.private-subnet-3: Creating...[0m[0m
+[0m[1maws_security_group.sg_allow_ssh_jenkins: Creating...[0m[0m
+[0m[1maws_route_table.private-route-table: Creating...[0m[0m
+[0m[1maws_subnet.private-subnet-2: Creating...[0m[0m
+[0m[1maws_internet_gateway.development-igw: Creating...[0m[0m
+[0m[1maws_route_table.public-route-table: Creation complete after 1s [id=rtb-08fd3db3169751a1c][0m[0m
+[0m[1maws_route_table.private-route-table: Creation complete after 1s [id=rtb-0646b8e4252ce568d][0m[0m
+[0m[1maws_subnet.public-subnet-3: Creation complete after 1s [id=subnet-0bd93a2fbd374ba73][0m[0m
+[0m[1maws_subnet.private-subnet-2: Creation complete after 1s [id=subnet-037b4ee4c5fb6521b][0m[0m
+[0m[1maws_route_table_association.public-route-3-association: Creating...[0m[0m
+[0m[1maws_subnet.private-subnet-3: Creation complete after 1s [id=subnet-0a42b78de65b19373][0m[0m
+[0m[1maws_subnet.public-subnet-2: Creation complete after 1s [id=subnet-025b7c61aa638acc3][0m[0m
+[0m[1maws_subnet.public-subnet-1: Creation complete after 1s [id=subnet-0b6a9530be3176f92][0m[0m
+[0m[1maws_subnet.private-subnet-1: Creation complete after 1s [id=subnet-0568dfae2c63d2cfe][0m[0m
+[0m[1maws_route_table_association.public-route-2-association: Creating...[0m[0m
+[0m[1maws_route_table_association.private-route-2-association: Creating...[0m[0m
+[0m[1maws_route_table_association.private-route-3-association: Creating...[0m[0m
+[0m[1maws_nat_gateway.nat-gw: Creating...[0m[0m
+[0m[1maws_route_table_association.public-route-1-association: Creating...[0m[0m
+[0m[1maws_route_table_association.private-route-1-association: Creating...[0m[0m
+[0m[1maws_internet_gateway.development-igw: Creation complete after 2s [id=igw-03d1c377f00d77aa6][0m[0m
+[0m[1maws_route.public-internet-igw-route: Creating...[0m[0m
+[0m[1maws_route_table_association.public-route-2-association: Creation complete after 1s [id=rtbassoc-0cd5f0cd5d02cdc0f][0m[0m
+[0m[1maws_route_table_association.private-route-3-association: Creation complete after 1s [id=rtbassoc-0ce8fcc104b59a24c][0m[0m
+[0m[1maws_route_table_association.public-route-3-association: Creation complete after 1s [id=rtbassoc-07e1e07558e465822][0m[0m
+[0m[1maws_route_table_association.private-route-2-association: Creation complete after 1s [id=rtbassoc-06896819ccbc794f5][0m[0m
+[0m[1maws_route_table_association.public-route-1-association: Creation complete after 1s [id=rtbassoc-0387606d429432057][0m[0m
+[0m[1maws_route_table_association.private-route-1-association: Creation complete after 1s [id=rtbassoc-0a983f1c927da69ea][0m[0m
+[0m[1maws_route.public-internet-igw-route: Creation complete after 0s [id=r-rtb-08fd3db3169751a1c1080289494][0m[0m
+[0m[1maws_security_group.sg_allow_ssh_jenkins: Creation complete after 3s [id=sg-0142fd0091ca0244a][0m[0m
+[0m[1maws_instance.jenkins-instance: Creating...[0m[0m
+[0m[1maws_nat_gateway.nat-gw: Still creating... [10s elapsed][0m[0m
+[0m[1maws_instance.jenkins-instance: Still creating... [10s elapsed][0m[0m
+[0m[1maws_nat_gateway.nat-gw: Still creating... [20s elapsed][0m[0m
+[0m[1maws_instance.jenkins-instance: Still creating... [20s elapsed][0m[0m
+[0m[1maws_instance.jenkins-instance: Creation complete after 23s [id=i-05915dbb489eb3cb2][0m[0m
+[0m[1maws_nat_gateway.nat-gw: Still creating... [30s elapsed][0m[0m
+[0m[1maws_nat_gateway.nat-gw: Still creating... [40s elapsed][0m[0m
+[0m[1maws_nat_gateway.nat-gw: Still creating... [50s elapsed][0m[0m
+[0m[1maws_nat_gateway.nat-gw: Still creating... [1m0s elapsed][0m[0m
+[0m[1maws_nat_gateway.nat-gw: Still creating... [1m10s elapsed][0m[0m
+[0m[1maws_nat_gateway.nat-gw: Still creating... [1m20s elapsed][0m[0m
+[0m[1maws_nat_gateway.nat-gw: Still creating... [1m30s elapsed][0m[0m
+[0m[1maws_nat_gateway.nat-gw: Creation complete after 1m38s [id=nat-0feceefbd6484fa43][0m[0m
+[0m[1maws_route.nat-gw-route: Creating...[0m[0m
+[0m[1maws_route.nat-gw-route: Creation complete after 0s [id=r-rtb-0646b8e4252ce568d1080289494][0m[0m
+[33m
+[1m[33mWarning: [0m[0m[1mInterpolation-only expressions are deprecated[0m
+
+[0m  on compute.tf line 26, in resource "aws_key_pair" "ec2key":
+  26:   public_key  =[4m"${file(var.keypath)}"[0m
+[0m
+Terraform 0.11 and earlier required all non-constant expressions to be
+provided via interpolation syntax, but this pattern is now deprecated. To
+silence this warning, remove the "${ sequence from the start and the }"
+sequence from the end of this expression, leaving just the inner expression.
+
+Template interpolation syntax is still used to construct strings from
+expressions when the template includes multiple interpolation sequences or a
+mixture of literal strings and interpolations. This deprecation applies only
+to templates that consist entirely of a single interpolation sequence.
+
+(and 39 more similar warnings elsewhere)
+[0m[0m
+[0m[1m[32m
+Apply complete! Resources: 23 added, 0 changed, 0 destroyed.[0m
+[0m
+The state of your infrastructure has been saved to the path
+below. This state is required to modify and destroy your
+infrastructure, so keep it safe. To inspect the complete state
+use the `terraform show` command.
+
+State path: terraform.tfstate[0m
+[0m[1m[32m
+Outputs:
+
+ami = ami-026dea5602e368e96
+jenkins_ip_address = ec2-13-58-129-101.us-east-2.compute.amazonaws.com[0m
