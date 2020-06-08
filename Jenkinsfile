@@ -17,7 +17,7 @@ pipeline {
               
         
             // Run OWASP Dependency Check
-            dependencyCheck additionalArguments: '-f HTML, XML,CSV -s .'
+            dependencyCheck additionalArguments: '', odcInstallation: '5.0.0'
         
                               
         
