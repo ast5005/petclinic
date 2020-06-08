@@ -18,7 +18,7 @@ pipeline {
         
             // Run OWASP Dependency Check
             dependencyCheck additionalArguments: '', odcInstallation: '5.0.0'
-        
+            dependencyCheckPublisher pattern: ''
                               
         
     }
