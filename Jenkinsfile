@@ -18,8 +18,8 @@ pipeline {
         
             // Run OWASP Dependency Check
             dependencyCheck additionalArguments: '', odcInstallation: '5.0.0'
-            dependencyCheckPublisher pattern: ''
-                              
+            dependencyCheckPublisher pattern: 'build/owasp/dependency-check-report.xml'
+                             
         
     }
 
@@ -37,7 +37,7 @@ pipeline {
                 echo '=== Building Petclinic Docker Image ==='
                 script {
                     echo '===Inside Script==='
-                    app = docker.build("petclinic-spinnaker-jenkins")
+                    app = docker.build("0327201/petclinic-spinnaker-jenkins")
                 }
             }
         }
