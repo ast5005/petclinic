@@ -19,8 +19,9 @@ pipeline {
             // Run OWASP Dependency Check
             dependencyCheck additionalArguments: '--out dependency-report.xml --format XML', odcInstallation: '5.0.0'
             dependencyCheckPublisher pattern: 'dependency-check-report.xml'
-            //slackUploadFile channel: 'security', tokenCredentialId: 'slack-token', filePath: 'dependency-report.xml'
-            slackSend botUser: true, channel: 'security', color: '#ff0000', message: '21 Critical 15 High Vulnerability Detected ', teamDomain: 'futurama', tokenCredentialId: 'slack-token', username: 'jenkins'        
+            
+            slackSend botUser: true, channel: 'security', color: '#ff0000', message: '21 Critical 17 High Vulnerability Detected ', teamDomain: 'futurama', tokenCredentialId: 'slack-token', username: 'jenkins'        
+             slackUploadFile channel: 'security', credentialId: 'slack-token', filePath: 'dependency-report.xml', initialComment: 'Dependency Check Report'
     }
 
             post {
