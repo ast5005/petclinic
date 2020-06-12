@@ -20,8 +20,7 @@ pipeline {
             dependencyCheck additionalArguments: '--out dependency-report.xml --format XML', odcInstallation: '5.0.0'
             dependencyCheckPublisher pattern: 'dependency-check-report.xml'
             //slackUploadFile channel: 'security', tokenCredentialId: 'slack-token', filePath: 'dependency-report.xml'
-            slackSend botUser: true, channel:'security', color:'#00ff00',message:'21 Critical 17 High Vulnarability Detected',tokenCredentialId: 'slack-token'
-                             
+            slackSend botUser: true, channel:'security', color:'#00ff00',message:'21 Critical 17 High Vulnarability Detected',tokenCredentialId: 'slack-token', <$BUILD_URL|Build #$BUILD_NUMBER>: my message."          
         
     }
 
