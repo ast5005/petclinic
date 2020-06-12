@@ -19,6 +19,7 @@ pipeline {
             // Run OWASP Dependency Check
             dependencyCheck additionalArguments: '--out dependency-report.xml --format XML', odcInstallation: '5.0.0'
             dependencyCheckPublisher pattern: 'dependency-check-report.xml'
+            slackUploadFile channel: 'security', credentialId: 'slack-token', filePath: 'dependency-report.xml'
                              
         
     }
