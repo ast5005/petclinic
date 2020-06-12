@@ -17,7 +17,7 @@ pipeline {
               
         
             // Run OWASP Dependency Check
-            dependencyCheck additionalArguments: '--output dependency-report.xml --format XML', odcInstallation: '5.0.0'
+            dependencyCheck additionalArguments: '--out dependency-report.xml --format XML', odcInstallation: '5.0.0'
             dependencyCheckPublisher pattern: 'dependency-check-report.xml'
                              
         
